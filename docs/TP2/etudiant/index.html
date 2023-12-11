@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TD7</title>
+		<meta charset="utf-8">
+	   <link rel="stylesheet" href="normalize.css"/>
+		<style>
+		   * {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body { margin: 0; width: 100%; min-width: 330px; }
+			
+			/* En-tête*/
+			header {
+				width: 100%;
+				text-align: center;
+			}			
+			
+			/* Menu de navigation */
+			#menu {
+				margin-left: auto;
+				margin-right: auto;	
+				text-align: center;
+				display: table;
+				border-spacing: 2em;
+			}
+			
+			header > nav > div {
+				display: table-row;
+			}
+			
+			/* Tout bouton du menu */
+			header > nav > div > a.button {
+
+			    padding: 16px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: table-cell;
+			    border-style: solid;
+				 border-width: 1px;
+			    font-size: 1.2em;
+				transition: background 0.8s, color 0.8s;
+				border-radius:10px;
+				
+		
+			   
+			}
+			
+			header > nav > div > a.butGreen {
+				background-color: #4CAF50;
+				color: white;
+				border-color: #4CAF50;
+				box-shadow: 0px 5px 10px #4CAF50;
+
+			}
+
+			header > nav > div > a.butBlue {
+				background-color: #008CBA;
+				color: white;
+				border-color: #008CBA;
+				box-shadow: 0px 5px 10px #008CBA;
+
+			}
+
+			header > nav > div > a.butRed {
+				background-color: #F44336;
+				color: white;
+				border-color: #F44336;
+				box-shadow: 0px 5px 10px #F44336;
+
+			}
+
+			header > nav > div > a.butGray {
+				background-color: #e7e7e7;
+				color: black;
+				border-color: #e7e7e7;
+				box-shadow: 0px 5px 10px #e7e7e7;
+
+			}
+
+			a.butGreen:hover {
+				cursor: default;
+				background-color: white;
+				color: #4CAF50;
+			}
+			
+			a.butBlue:hover {
+				cursor: default;
+				background-color: white;
+				color: #008CBA;
+			}
+
+			a.butRed:hover {
+				cursor: default;
+				background-color: white;
+				color: #F44336;
+			}
+
+			a.butGray:hover {
+				cursor: default;
+				background-color: black;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>HTML-CSS TP3</h1>
+			<nav id="menu">
+				<div>
+					<a href="exo2.html" class="button butGreen">Exo 2<span></span></a>
+					<a href="exo3.html" class="button butRed">Exo 3<span></span></a>
+				</div>
+				<div>
+					<a href="exo4.html" class="button butBlue">Exo 4<span></span></a>
+					<a href="exo5.html" class="button butGray">Exo 5<span></span></a>
+				</div>
+			</nav>
+		</header>
+	</body>
+</html>

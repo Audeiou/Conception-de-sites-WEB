@@ -33,7 +33,7 @@
 			}
 			
 			/* Tout bouton du menu */
-			header > nav > div > a.button {
+			header > nav > div > a.button:not(span) {
 
 			    padding: 16px 32px;
 			    text-align: center;
@@ -105,6 +105,34 @@
 				color: white;
 			}
 
+			span:after {
+				content: " »";
+			}
+
+			span {
+				font-size: 90%;
+				text-align: end;	
+
+			}
+
+			.b {
+				border: 1px solid black;
+				width: 100px;
+				text-align: center;
+				
+
+			}
+
+			.b div {
+
+				display: inline-block;
+				visibility: hidden;	
+					}
+			
+			.b:hover #after {
+				visibility: visible;
+
+			}
 		</style>
 	</head>
 	<body>
@@ -121,5 +149,13 @@
 				</div>
 			</nav>
 		</header>
+		<div class="b">
+			<div>»</div>
+			<a  class="button ">Exo 5 </a>
+			<div id="after">»</div>
+		</div>
+
 	</body>
 </html>
+
+
